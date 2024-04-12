@@ -15,4 +15,30 @@ function buscar(){
     })
 
 
+
+}
+
+function enviar(event){
+    event.preventDefault();
+    var nome = document.getElementById('nome').value;
+    var sobrenome = document.getElementById('sobrenome').value;
+    var email = document.getElementById('email').value;
+    var mensagem = document.getElementById('mensagem').value;
+    var data = {
+        name: nome,
+        email: email,
+        lastname: sobrenome,
+        message: mensagem
+    }
+    fetch('https://api-aula.up.railway.app/generica', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
 }
