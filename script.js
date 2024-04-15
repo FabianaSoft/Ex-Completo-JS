@@ -1,12 +1,12 @@
 function soma(){
-    var n1 = document.getElementById('n1').value;
-    var n2 = document.getElementById('n2').value;
-    var resultado = parseInt(n1) + parseInt(n2);
+    let n1 = document.getElementById('n1').value;
+    let n2 = document.getElementById('n2').value;
+    let resultado = parseInt(n1) + parseInt(n2);
     document.getElementById('resultado').innerHTML = resultado;
 }
 
 function buscar(){
-    var pokemon = document.getElementById('pokemon').value;
+    let pokemon = document.getElementById('pokemon').value;
     fetch("https://pokeapi.co/api/v2/pokemon/"+pokemon)
     .then(response => response.json())
     .then(data => {
@@ -20,11 +20,11 @@ function buscar(){
 
 function enviar(event){
     event.preventDefault();
-    var nome = document.getElementById('nome').value;
-    var sobrenome = document.getElementById('sobrenome').value;
-    var email = document.getElementById('email').value;
-    var mensagem = document.getElementById('mensagem').value;
-    var data = {
+    let nome = document.getElementById('nome').value;
+    let sobrenome = document.getElementById('sobrenome').value;
+    let email = document.getElementById('email').value;
+    let mensagem = document.getElementById('mensagem').value;
+    let data = {
         name: nome,
         email: email,
         lastname: sobrenome,

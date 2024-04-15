@@ -1,24 +1,129 @@
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 
 }
 
-html,body, .container{
-    height: 100vh;
-    width: 100vw;
+html,
+body,
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+
+}
+
+body {
+
+    background-color: #fce6a8;
+    font-family: Arial, sans-serif;
+
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    gap: 10px;
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+header .botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 20%;
+    background-color: #d2e4e1;
+    height: 100%;
+}
+
+header h1 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2e4e1;
+    height: 100%;
+}
+
+header .botoes a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #788896;
+}
+
+main {
+    background-color: #d2e4e1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: #d2e4e1;
 
 }
 
-body{
+.sessao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto;
+    background-color: #e3e8ed;
+    width: 40%;
+    padding: 10px;
+}
 
+.sessao .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
 
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin:0;
-    padding: 0;
-    
+}
+
+.sessao button {
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #788896;
+    border: none;
+    width: 100%;
+}
+
+.sessao input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #788896;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.sessao .resultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #ced8e0;
+    width:50%;
+    padding: 10px;
+    margin: 10px auto;
+    flex-direction: column;
+    border: 1px solid #788896;
+    height: 200px;
 }
