@@ -65,6 +65,7 @@ header .botoes a {
 
 main {
     background-color: #d2e4e1;
+
 }
 
 footer {
@@ -96,7 +97,7 @@ footer {
 
 }
 
-.sessao button {
+.botao {
     color: #fff;
     font-size: 1.1rem;
     padding: 10px 20px;
@@ -106,7 +107,7 @@ footer {
     width: 100%;
 }
 
-.sessao input {
+.input {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #788896;
@@ -120,10 +121,51 @@ footer {
     align-items: center;
     gap: 10px;
     background-color: #ced8e0;
-    width:50%;
+    width: 50%;
     padding: 10px;
     margin: 10px auto;
     flex-direction: column;
     border: 1px solid #788896;
     height: 200px;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #788896;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    resize: none;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto;
+    flex-direction: column;
+}
+
+.perfil img {
+    width: 300px;
+    
 }
