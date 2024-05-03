@@ -169,3 +169,27 @@ textarea {
     width: 300px;
     
 }
+
+@media (max-width: 768px) {
+    
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .botoes, h1 {
+        width: 100% !important;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .sessao{
+        width: 80%;
+        flex-direction: column;
+    }
+    .sessao .resultado{
+        width: 80%;
+    }   
+}
